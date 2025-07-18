@@ -1,0 +1,99 @@
+:root {
+    --sh1: 10px 10px 10px #bfbfbf; /* Shadow-Version: 1            */
+    --sh2: 0 20px 20px 0 #7090b068; /* Shadow-Version: 2            */
+    --sh3: 0 10px 17px 0 #7090b047; /* Shadow-Version: 3            */
+    --sh4: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow-Version: 4            */
+    --sh5: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow-Version: 5            */
+    --sh6: 0 0 15px -2px rgba(0, 0, 0, 0.2); /* Shadow-Version: 6            */
+    --primary: #E76F51;
+    --secondary:#F8E1DB;
+    --white: #fff;
+    --grey: #D2D2D2;
+    --dark: #3B3735;
+    --bg: #FaF4F2;
+    --b1f: 1px solid #fff; /* Border 1px Solid White Color */
+    --b1g: 1px solid #d2d2d2; /* Border 1px Solid Gray Color  */
+    --b1d: 1px solid #3b3735; /* Border 1px Solid Black Color */
+    --crw: 145rem; /* continer width 145rem */
+    --m0a: 0 auto; /* margin 0 auto 0 auto */
+    --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+    --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+    --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
+    --btn-hover: all 100ms ease-in-out;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("../Assets/Fonts/Roboto-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Roboto Medium";
+    src: url("../Assets/Fonts/Roboto-Medium.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Archivo Black";
+    src: url("../Assets/Fonts/Archivo-Black.ttf") format("truetype");
+  }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
+    scroll-behavior: smooth;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+  button {
+    /*border: none;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: var(--sh1);
+    /* box-shadow: var(--sh2); */
+    /* box-shadow: var(--sh3); */
+    /* box-shadow: var(--sh4); */
+    /* box-shadow: var(--sh5); */
+    /* box-shadow: var(--sh6); */
+  }
+  input {
+    border: none;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+      outline: none;
+    /* box-shadow: var(--sh1); */
+   /* box-shadow: var(--sh2);*/
+    /* box-shadow: var(--sh3); */
+    /* box-shadow: var(--sh4); */
+    /* box-shadow: var(--sh5); */
+    /* box-shadow: var(--sh6); */
+  }
+
+.btn {
+    border-radius: 10rem;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 18rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 17px;
+    font-family: var(--primary-font-md);
+    transition: all 0.3s ease-in-out 0.05s;
+}
